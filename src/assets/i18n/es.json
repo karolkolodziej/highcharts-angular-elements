@@ -1,0 +1,12 @@
+{
+  "shared": {
+    "en": "Inglés",
+    "es": "Español",
+    "title": "Título",
+    "x_axis_title": "Título del Eje X",
+    "y_axis_title": "Título del Eje Y",
+    "download_png": "Descargar PNG",
+    "serie_name": "Nombre de Serie",
+    "empty": "--------------------"
+  }
+}
