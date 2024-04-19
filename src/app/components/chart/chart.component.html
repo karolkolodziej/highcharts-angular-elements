@@ -1,0 +1,27 @@
+<div style="padding: 10px">
+  <mat-button-toggle-group
+    name="language"
+    aria-label="Language"
+    [formControl]="languageControl"
+  >
+    <mat-button-toggle value="en" [checked]="">{{
+      "shared.en" | transloco
+    }}</mat-button-toggle>
+    <mat-button-toggle value="es">{{
+      "shared.es" | transloco
+    }}</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div style="padding: 10px">
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [constructorType]="chartConstructor"
+    [options]="(chartOptions$ | async)!"
+    [(update)]="updateFlag"
+    [oneToOne]="oneToOneFlag"
+    [callbackFunction]="callbackFunction"
+    [runOutsideAngular]="runOutsideAngular"
+    style="width: 100%; height: 400px; display: inline-block"
+  ></highcharts-chart>
+</div>
