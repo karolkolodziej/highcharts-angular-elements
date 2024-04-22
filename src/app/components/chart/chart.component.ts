@@ -9,8 +9,6 @@ import {
 import * as Highcharts from 'highcharts';
 
 import {
-  NgElement,
-  WithProperties,
   createCustomElement,
 } from '@angular/elements';
 import * as dayjs from 'dayjs';
@@ -69,9 +67,7 @@ export class ChartComponent implements OnInit {
   }
 
   private createTranslationElement() {
-    const translationEl: NgElement & WithProperties<TranslationComponent> =
-      document.createElement(translationElementTag) as any;
-    return translationEl;
+    return document.createElement(translationElementTag);
   }
 
   private createChartData() {
